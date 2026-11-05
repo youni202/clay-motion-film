@@ -1,0 +1,82 @@
+name: 🎬 Make film
+
+on:
+  workflow_dispatch:
+    inputs:
+      company:
+        description: "회사 이름 (예: 아트라스콥코 코리아). 비우면 기존 films/<slug>만 다시 생성"
+        required: false
+      slug:
+        description: "폴더 이름 (영문 소문자, 예: atlas-copco-korea)"
+        required: true
+      notes:
+        description: "강조하고 싶은 점 (선택)"
+        required: false
+      stop_after_plan:
+        description: "기획안(film.json)만 만들고 멈추기 — 사실 검토 후 다시 실행"
+        type: boolean
+        default: false
+      regenerate:
+        description: "이미지·음악을 모두 새로 만들기"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["films/**", "engine/**", "scripts/build.py"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency: { group: film, cancel-in-progress: false }
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q -r requirements.txt
+
+      - name: Plan (Gemini + Google Search)
+        if: github.event_name == 'workflow_dispatch' && inputs.company != ''
+        env: { COMPANY: "${{ inputs.company }}", SLUG: "${{ inputs.slug }}", NOTES: "${{ inputs.notes }}" }
+        run: python scripts/plan_film.py "$COMPANY" "$SLUG" --notes "$NOTES"
+
+      - name: Generate images & music (Gemini)
+        if: github.event_name == 'workflow_dispatch' && !inputs.stop_after_plan
+        env: { SLUG: "${{ inputs.slug }}", FORCE: "${{ inputs.regenerate && '--force' || '' }}" }
+        run: python scripts/gen_assets.py "films/$SLUG" $FORCE
+
+      - name: Commit film source
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "film-bot"
+          git config user.email "film-bot@users.noreply.github.com"
+          git add films
+          git diff --cached --quiet || { git commit -m "film: $SLUG" && git push; }
+        env: { SLUG: "${{ inputs.slug }}" }
+
+      - name: Build every film
+        if: github.event_name == 'push' || !inputs.stop_after_plan
+        run: |
+          for d in films/*/; do
+            case "$d" in films/_*) continue;; esac
+            if [ -f "$d/film.json" ] && [ -d "$d/assets" ]; then python scripts/build.py "$d"; fi
+          done
+          python scripts/gallery.py
+
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name == 'push' || !inputs.stop_after_plan
+        with: { path: dist }
+      - id: deploy
+        if: github.event_name == 'push' || !inputs.stop_after_plan
+        uses: actions/deploy-pages@v4
+      - name: Link
+        if: steps.deploy.outcome == 'success'
+        run: echo "### ▶ ${{ steps.deploy.outputs.page_url }}${{ inputs.slug }}/" >> "$GITHUB_STEP_SUMMARY"

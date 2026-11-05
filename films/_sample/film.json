@@ -1,0 +1,46 @@
+{
+  "slug": "_sample",
+  "title": "한빛로보틱스 소개 필름",
+  "brand": "HANBIT ROBOTICS",
+  "since": 2009,
+  "now": 2026,
+  "palette": {"primary": "#0a87c2", "deep": "#0b2f5b", "light": "#5fd0f2", "accent": "#ffc83d", "stage": "#F4F8FD"},
+  "art_direction": "Friendly but professional experts. Navy and sky-blue outfits with small yellow details.",
+  "characters": {
+    "guide": "a polar bear engineer in a navy work jacket and white safety helmet, giving a thumbs up",
+    "beaver": "a beaver pointing at a cute round blue robot arm with tiny sparkles",
+    "owl": "an owl with round glasses holding a glowing microchip carefully",
+    "raccoon": "a raccoon tightening a bolt on a toy car with a small cordless tool",
+    "penguin": "a penguin hugging a sprout in a pot with water drops, showing a green energy gauge"
+  },
+  "hero": "a shiny blue-and-yellow toy robot arm holding a small gear",
+  "intro": {"sub": "**17년**, 공장의 내일을 만들어 온 한빛로보틱스"},
+  "history": {
+    "title": "SINCE 2009",
+    "sub": "작은 연구실에서 시작해, 스마트팩토리 파트너로",
+    "character": "guide",
+    "items": [["2009", "대전 연구실 창업"], ["2013", "첫 협동로봇 출시"], ["2016", "수출 시작", 1], ["2019", "평택 공장 준공"], ["2022", "AI 비전 검사 출시"], ["2024", "누적 1만 대"], ["2026", "탄소중립 공장 전환", 1]]
+  },
+  "scenes": [
+    {"img": "beaver", "name": "COBOT", "cat": "COLLABORATIVE ROBOT", "bg": "#EEF6FB", "blob": "#CFE6F4", "ac": "#0a87c2", "how": "사람 곁에서 함께 일하는 로봇", "tip": "가벼운 협동로봇이 반복 작업을 맡고, 사람은 더 중요한 일에 집중해요.", "tags": ["#협동로봇", "#안전센서", "#쉬운티칭"]},
+    {"img": "owl", "name": "VISION", "cat": "AI INSPECTION", "bg": "#F1F3F8", "blob": "#D9DEEA", "ac": "#4a5a7d", "how": "눈보다 정확한 AI 검사", "tip": "카메라와 AI가 미세한 불량까지 찾아내 품질을 지켜요.", "tags": ["#AI비전", "#불량검출", "#품질"]},
+    {"img": "raccoon", "name": "ASSEMBLY", "cat": "SMART TOOLS", "bg": "#FDF6EA", "blob": "#F6E2BC", "ac": "#b06a00", "how": "정밀하게 조이고, 기록까지", "tip": "토크 데이터를 자동으로 기록하는 스마트 공구로 조립 품질을 관리해요.", "tags": ["#스마트공구", "#토크관리", "#데이터"]},
+    {"img": "penguin", "name": "PLANET", "cat": "SUSTAINABILITY", "bg": "#EEF8F0", "blob": "#CFEBD6", "ac": "#2b8a4b", "how": "에너지는 줄이고, 내일은 키우고", "tip": "고효율 모터와 재생에너지로 공장의 탄소 배출을 줄여 가요.", "tags": ["#탄소중립", "#고효율", "#재생에너지"]}
+  ],
+  "products": {
+    "tag": "LINEUP",
+    "title": "HANBIT LINEUP",
+    "sub": "공장의 모든 순간에 함께하는 제품",
+    "characters": ["guide"],
+    "groups": [
+      {"label": "로봇", "items": [["H-Cobot 5", "협동로봇", "#0a87c2", "NEW"], ["H-Cobot 12", "중량물 협동로봇", "#0b2f5b"]]},
+      {"label": "검사", "items": [["H-Vision", "AI 비전 검사", "#4a5a7d"], ["H-Scan", "3D 측정", "#2f4f8f"]]},
+      {"label": "공구", "items": [["H-Torque", "스마트 조립 공구", "#b06a00"], ["H-Link", "공정 데이터", "#7a4fb0"]]},
+      {"label": "에너지", "items": [["H-Eco", "에너지 관리", "#2b8a4b"]]}
+    ]
+  },
+  "finale": {"title": "공장의 내일을, 함께", "sub": "사람과 로봇이 함께 일하는 더 안전한 현장으로", "logo": "HANBIT ROBOTICS"},
+  "music": {"prompt": "Bright, upbeat modern electronic pop for an industrial technology brand film: rhythmic mechanical percussion, synth arpeggios, warm piano chords.", "bpm": 115},
+  "timing": {"intro": 4, "history": 6, "scene": 5.5, "products": 8.5, "finale": 8},
+  "sources": []
+}

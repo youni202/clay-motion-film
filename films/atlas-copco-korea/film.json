@@ -1,0 +1,249 @@
+{
+  "slug": "atlas-copco-korea",
+  "title": "아트라스콥코 코리아 소개 필름",
+  "brand": "ATLAS COPCO KOREA",
+  "since": 1873,
+  "now": 2026,
+  "palette": {
+    "primary": "#0a87c2",
+    "deep": "#0b2f5b",
+    "light": "#5fd0f2",
+    "accent": "#ffc83d",
+    "stage": "#F4F8FD"
+  },
+  "art_direction": "Friendly but trustworthy industrial experts. Navy and sky-blue work outfits with small safety-yellow details.",
+  "characters": {
+    "guide": "a polar bear engineer in a navy work jacket and white safety helmet, giving a thumbs up",
+    "beaver": "a beaver pointing at a cute round blue air compressor with swirls of air",
+    "owl": "an owl with round glasses next to a silver vacuum pump, carefully holding a shiny semiconductor wafer",
+    "raccoon": "a raccoon tightening a bolt on a toy car with a cordless assembly tool, a small yellow robot arm beside it",
+    "hedgehog": "a hedgehog in a yellow safety helmet waving next to a portable generator and a small light tower",
+    "penguin": "a penguin hugging a sprout in a pot with water drops, showing a green energy gauge"
+  },
+  "hero": "two interlocking toy gears, one blue and one yellow, with a soft swirl of air",
+  "intro": {
+    "sub": "**153년**, 산업의 내일을 만들어 온 아트라스콥코"
+  },
+  "history": {
+    "title": "SINCE 1873",
+    "sub": "스톡홀름에서 시작해, 1981년 한국으로",
+    "character": "guide",
+    "items": [
+      [
+        "1873",
+        "스웨덴 스톡홀름 창립"
+      ],
+      [
+        "1968",
+        "경원기계 설립"
+      ],
+      [
+        "1981",
+        "아트라스콥코 한국 진출",
+        1
+      ],
+      [
+        "1992",
+        "에드워드코리아 설립"
+      ],
+      [
+        "2007",
+        "CP·Desoutter 코리아"
+      ],
+      [
+        "2022",
+        "에드워드 아산공장 준공"
+      ],
+      [
+        "2024",
+        "프리시스 합류"
+      ],
+      [
+        "2026",
+        "부산공장 신규 이전",
+        1
+      ]
+    ]
+  },
+  "scenes": [
+    {
+      "img": "beaver",
+      "name": "COMPRESSOR",
+      "cat": "COMPRESSOR TECHNIQUE",
+      "bg": "#EEF6FB",
+      "blob": "#CFE6F4",
+      "ac": "#0a87c2",
+      "how": "공기를 담아 산업을 움직여요",
+      "tip": "공기·가스 압축기부터 공기 처리·관리 시스템과 서비스까지. 경원기계는 1968년부터 공기압축기를 만들어 왔어요.",
+      "tags": [
+        "#공기압축기",
+        "#경원기계",
+        "#에너지효율"
+      ]
+    },
+    {
+      "img": "owl",
+      "name": "VACUUM",
+      "cat": "VACUUM TECHNIQUE",
+      "bg": "#F1F3F8",
+      "blob": "#D9DEEA",
+      "ac": "#4a5a7d",
+      "how": "반도체를 지키는 깨끗한 진공",
+      "tip": "반도체·디스플레이 공정의 진공 펌프와 유해가스 저감 장비. 에드워드코리아는 직원 1,500명 이상, 공장 4곳이에요.",
+      "tags": [
+        "#Edwards",
+        "#Leybold",
+        "#CSK"
+      ]
+    },
+    {
+      "img": "raccoon",
+      "name": "ASSEMBLY",
+      "cat": "INDUSTRIAL TECHNIQUE",
+      "bg": "#FDF6EA",
+      "blob": "#F6E2BC",
+      "ac": "#b06a00",
+      "how": "정밀하게 조이고, 똑똑하게 검사",
+      "tip": "조립 공구와 조립 시스템, 공정 제어 소프트웨어, 머신비전으로 생산 라인의 품질을 지켜요.",
+      "tags": [
+        "#Desoutter",
+        "#ISRA_VISION",
+        "#조립자동화"
+      ]
+    },
+    {
+      "img": "hedgehog",
+      "name": "POWER",
+      "cat": "POWER TECHNIQUE",
+      "bg": "#FBF7E8",
+      "blob": "#F2E7B5",
+      "ac": "#8f6c00",
+      "how": "현장 어디서든 힘을 전해요",
+      "tip": "이동식 압축기·조명탑·펌프 같은 현장 장비와 렌탈 솔루션으로 건설·산업 현장을 밝혀요.",
+      "tags": [
+        "#이동식장비",
+        "#조명탑",
+        "#렌탈솔루션"
+      ]
+    },
+    {
+      "img": "penguin",
+      "name": "PLANET",
+      "cat": "SUSTAINABILITY",
+      "bg": "#EEF8F0",
+      "blob": "#CFEBD6",
+      "ac": "#2b8a4b",
+      "how": "에너지는 줄이고, 내일은 키우고",
+      "tip": "2030년까지 에너지 사용과 CO₂ 배출 48% 감축, 매년 에너지의 30%를 재생에너지로. Water for All도 함께해요.",
+      "tags": [
+        "#CO₂48%감축",
+        "#WaterForAll",
+        "#재생에너지"
+      ]
+    }
+  ],
+  "products": {
+    "tag": "ONE GROUP",
+    "title": "ATLAS COPCO IN KOREA",
+    "sub": "4개 사업 영역 · 약 2,800명 · 아산·천안·부산·시흥 공장",
+    "characters": [
+      "guide"
+    ],
+    "groups": [
+      {
+        "label": "압축기",
+        "items": [
+          [
+            "Atlas Copco Korea",
+            "공기 솔루션",
+            "#0a87c2"
+          ],
+          [
+            "경원기계",
+            "공기압축기",
+            "#0b2f5b"
+          ]
+        ]
+      },
+      {
+        "label": "진공 · 반도체",
+        "items": [
+          [
+            "Edwards Korea",
+            "진공 · 저감",
+            "#4a5a7d",
+            "1,500+"
+          ],
+          [
+            "Leybold Korea",
+            "진공 펌프",
+            "#2f4f8f"
+          ],
+          [
+            "CSK",
+            "저감 · 프리커서",
+            "#3a6ea5"
+          ],
+          [
+            "Presys",
+            "반도체 밸브",
+            "#5b6b8a",
+            "NEW"
+          ]
+        ]
+      },
+      {
+        "label": "공구 · 조립 · 머신비전",
+        "items": [
+          [
+            "Desoutter",
+            "조립 솔루션",
+            "#b06a00"
+          ],
+          [
+            "ISRA VISION",
+            "머신비전",
+            "#7a4fb0"
+          ],
+          [
+            "Chicago Pneumatic",
+            "산업용 공구",
+            "#c0392b"
+          ]
+        ]
+      },
+      {
+        "label": "정밀 펌프",
+        "items": [
+          [
+            "LEWA Korea",
+            "정밀 펌프",
+            "#2b8a4b"
+          ]
+        ]
+      }
+    ]
+  },
+  "finale": {
+    "title": "산업의 내일을, 함께",
+    "sub": "미래를 바꾸는 기술로, 1981년부터 한국 산업 현장과 함께",
+    "logo": "ATLAS COPCO KOREA"
+  },
+  "music": {
+    "prompt": "Bright, upbeat modern electronic pop for an industrial technology brand film: rhythmic mechanical percussion, synth arpeggios, warm piano chords, confident and energetic.",
+    "bpm": 115
+  },
+  "timing": {
+    "intro": 4,
+    "history": 6,
+    "scene": 5.5,
+    "products": 8.5,
+    "finale": 8
+  },
+  "sources": [
+    {
+      "title": "아트라스콥코 그룹 브로슈어 2026 (한국)",
+      "url": "https://www.atlascopcogroup.com/content/dam/brands/local-group-sites/south-korea/documents/%EC%95%84%ED%8A%B8%EB%9D%BC%EC%8A%A4%EC%BD%A5%EC%BD%94%20%EA%B7%B8%EB%A3%B9%20%EB%B8%8C%EB%A1%9C%EC%8A%88%EC%96%B4%202026_final.pdf.coredownload.pdf"
+    }
+  ]
+}

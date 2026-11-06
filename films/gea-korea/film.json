@@ -1,0 +1,259 @@
+{
+  "slug": "gea-korea",
+  "title": "GEA 코리아 소개 필름",
+  "brand": "GEA KOREA",
+  "since": 1881,
+  "now": 2026,
+  "palette": {
+    "primary": "#0a6fc2",
+    "deep": "#0b1f4a",
+    "light": "#52c7f2",
+    "accent": "#8fd14f",
+    "stage": "#F3F8FD"
+  },
+  "art_direction": "Friendly, trustworthy process engineers. Navy and bright blue outfits with small fresh-green details.",
+  "characters": {
+    "guide": "a friendly otter engineer in a navy work jacket with a small blue helmet, thumbs up, holding a tiny shiny stainless steel valve",
+    "calf": "a calf in a navy apron holding a milk bottle next to a small shiny stainless steel separator machine",
+    "hamster": "a hamster chef in a white chef hat holding a tray of cookies and spaghetti on a tiny conveyor",
+    "duck": "a duck barista holding a cup of instant coffee next to a small white spray-dryer tower",
+    "rabbit": "a rabbit scientist in a white lab coat holding a clear bottle of round tablets with a little blue shield sparkle",
+    "fox": "a fox hugging a green leaf next to a cute compact heat pump unit with a green energy gauge"
+  },
+  "intro": {
+    "sub": "**145년**, 더 나은 세상을 위한 엔지니어링"
+  },
+  "history": {
+    "title": "SINCE 1881",
+    "sub": "프랑크푸르트에서 시작해, 식품·제약 기술의 리더로",
+    "character": "guide",
+    "items": [
+      [
+        "1881",
+        "MG 창립 (프랑크푸르트)",
+        1
+      ],
+      [
+        "1920",
+        "GEA 설립 (보훔)"
+      ],
+      [
+        "1976",
+        "NIRO 분무건조기"
+      ],
+      [
+        "1999",
+        "Westfalia 등 인수"
+      ],
+      [
+        "2006",
+        "GEA Group 출범"
+      ],
+      [
+        "2011",
+        "‘더 나은 세상’ 비전"
+      ],
+      [
+        "2021",
+        "2040 넷제로 목표 발표"
+      ],
+      [
+        "2025",
+        "DAX 40 편입",
+        1
+      ]
+    ]
+  },
+  "scenes": [
+    {
+      "img": "calf",
+      "name": "DAIRY",
+      "cat": "DAIRY PROCESSING",
+      "bg": "#EEF6FC",
+      "blob": "#D3E8F7",
+      "ac": "#0a6fc2",
+      "how": "매일 마시는 우유 곁에",
+      "tip": "원심분리기·균질기로 우유를 깨끗하고 고르게. 전 세계 가공 우유의 약 4분의 1이 GEA 장비를 거쳐요.",
+      "tags": [
+        "#원심분리기",
+        "#균질기",
+        "#유가공"
+      ]
+    },
+    {
+      "img": "hamster",
+      "name": "FOOD",
+      "cat": "FOOD PROCESSING",
+      "bg": "#FDF6EA",
+      "blob": "#F6E2BC",
+      "ac": "#b5650a",
+      "how": "식탁 위 익숙한 그 맛",
+      "tip": "스파게티 4봉지 중 1봉지, 쿠키 5개 중 1개, 치킨너겟 3개 중 1개가 GEA 기술로 만들어져요.",
+      "tags": [
+        "#식품가공",
+        "#스파게티",
+        "#쿠키"
+      ]
+    },
+    {
+      "img": "duck",
+      "name": "BEVERAGE",
+      "cat": "BEVERAGE & POWDER",
+      "bg": "#F6F1EC",
+      "blob": "#E8D9C8",
+      "ac": "#7a4a2a",
+      "how": "한 잔의 커피가 되기까지",
+      "tip": "분무건조기로 액체를 고운 분말로. 인스턴트 커피 공정 라인 3개 중 1개가 GEA 기술이에요.",
+      "tags": [
+        "#분무건조",
+        "#인스턴트커피",
+        "#분말"
+      ]
+    },
+    {
+      "img": "rabbit",
+      "name": "PHARMA",
+      "cat": "PHARMA & HEALTHCARE",
+      "bg": "#F1F2FA",
+      "blob": "#DADDF2",
+      "ac": "#4b4fae",
+      "how": "더 건강한 내일을 위해",
+      "tip": "정제기와 무균 공정 기술로 의약품을 만들어요. 항암제 정제 2개 중 1개가 GEA 장비에서 생산돼요.",
+      "tags": [
+        "#정제기",
+        "#무균공정",
+        "#제약"
+      ]
+    },
+    {
+      "img": "fox",
+      "name": "PLANET",
+      "cat": "HEATING & REFRIGERATION",
+      "bg": "#EEF8F0",
+      "blob": "#CFEBD6",
+      "ac": "#2b8a4b",
+      "how": "에너지는 줄이고, 내일은 키우고",
+      "tip": "히트펌프와 산업용 냉동 기술로 공장의 에너지를 아끼고, 2040년 넷제로를 향해 가요.",
+      "tags": [
+        "#히트펌프",
+        "#산업냉동",
+        "#넷제로2040"
+      ]
+    }
+  ],
+  "products": {
+    "tag": "GEA IN KOREA",
+    "title": "GEA TECHNOLOGY",
+    "sub": "서울·부산 오피스 · 150개국 이상 · 임직원 18,000명+",
+    "characters": [
+      "guide"
+    ],
+    "groups": [
+      {
+        "label": "분리 · 유체",
+        "items": [
+          [
+            "Separator",
+            "원심분리기",
+            "#0a6fc2"
+          ],
+          [
+            "Homogenizer",
+            "균질기",
+            "#0b1f4a"
+          ],
+          [
+            "Hygienic Pump",
+            "위생 펌프",
+            "#2f6db0"
+          ],
+          [
+            "Valve",
+            "위생 밸브",
+            "#4a86c8"
+          ]
+        ]
+      },
+      {
+        "label": "건조 · 농축",
+        "items": [
+          [
+            "Spray Dryer",
+            "분무건조기",
+            "#7a4a2a"
+          ],
+          [
+            "Evaporator",
+            "증발 농축기",
+            "#a0612f"
+          ]
+        ]
+      },
+      {
+        "label": "식품 · 제약",
+        "items": [
+          [
+            "Food Line",
+            "식품 가공 라인",
+            "#b5650a"
+          ],
+          [
+            "Tablet Press",
+            "정제기",
+            "#4b4fae"
+          ]
+        ]
+      },
+      {
+        "label": "냉동 · 에너지",
+        "items": [
+          [
+            "Heat Pump",
+            "히트펌프",
+            "#2b8a4b",
+            "ESG"
+          ],
+          [
+            "Refrigeration",
+            "산업용 냉동",
+            "#1f7a6a"
+          ]
+        ]
+      }
+    ]
+  },
+  "finale": {
+    "title": "더 나은 세상을, 함께",
+    "sub": "Engineering for a better world — 식탁과 건강, 지구의 내일을 위한 기술",
+    "logo": "GEA KOREA"
+  },
+  "music": {
+    "prompt": "Bright, fresh and hopeful corporate brand film music: clear marimba and plucked guitar intro, light rhythmic percussion, warm strings building up.",
+    "bpm": 112
+  },
+  "timing": {
+    "intro": 4,
+    "history": 6,
+    "scene": 5.5,
+    "products": 8.5,
+    "finale": 8
+  },
+  "sources": [
+    {
+      "title": "GEA — Our Company",
+      "url": "https://gea.com/zh/company/about-us"
+    },
+    {
+      "title": "GEA — Our heritage",
+      "url": "https://gea.com/zh/company/about-us/our-heritage"
+    },
+    {
+      "title": "GEA South Korea — locations",
+      "url": "https://www.gea.com/zh/south-korea/"
+    },
+    {
+      "title": "GEA 2025 financial results (EQS News)",
+      "url": "https://www.investegate.co.uk/announcement/eqs/gea-group-aktiengesellschaft--0mpj/eqs-news-2025-financial-results-gea-reports-/9463404"
+    }
+  ]
+}

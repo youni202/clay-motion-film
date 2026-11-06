@@ -26,7 +26,7 @@ html,body{height:100%;background:var(--ink);overflow:hidden;font-family:var(--bo
 .sub{margin-top:18px;font-size:50px;font-weight:800;letter-spacing:-.02em;opacity:0;text-align:center;padding:0 120px;word-break:keep-all}
 .on .sub{animation:fadeUp .6s 1.9s forwards}
 .sub b{color:var(--p)}
-.peek{position:absolute;bottom:-30px;height:270px;width:auto;max-width:none;opacity:0}
+.peek{position:absolute;bottom:-30px;height:auto;max-height:250px;width:auto;max-width:300px;opacity:0}
 .on .peek{animation:peek .7s cubic-bezier(.3,1.6,.5,1) forwards}
 /* story scenes */
 .blob{position:absolute;width:900px;height:900px;border-radius:46% 54% 50% 50%/55% 45% 55% 45%;right:120px;top:120px;transform:scale(0)}
@@ -37,6 +37,7 @@ html,body{height:100%;background:var(--ink);overflow:hidden;font-family:var(--bo
 .on .char{animation:charIn 1s .25s cubic-bezier(.2,.8,.3,1) forwards}
 .char img{height:600px;width:auto;max-width:620px;object-fit:contain;transform-origin:50% 100%}
 .on .char img{animation:bob 1.4s 1.3s ease-in-out infinite}
+.char.wide{right:150px;width:860px}.char.wide img{height:auto;width:840px;max-width:840px;max-height:600px}.char.wide~.shadow,.shadow.wide{right:330px;width:500px}
 .shadow{position:absolute;right:390px;bottom:88px;width:380px;height:44px;border-radius:50%;background:rgba(13,27,61,.16);filter:blur(6px);transform:scale(0)}
 .on .shadow{animation:shIn .6s .9s forwards,shBob 1.4s 1.5s ease-in-out infinite}
 .left{position:absolute;left:120px;top:200px;width:840px}
@@ -102,7 +103,7 @@ html,body{height:100%;background:var(--ink);overflow:hidden;font-family:var(--bo
 .rays{position:absolute;left:50%;top:58%;width:2600px;height:2600px;margin:-1300px 0 0 -1300px;background:repeating-conic-gradient(rgba(255,255,255,.07) 0 6deg,transparent 6deg 18deg);opacity:0}
 .on .rays{animation:fadeIn .8s .2s forwards,spin 30s linear infinite}
 .line{position:absolute;left:0;right:0;bottom:90px;display:flex;justify-content:center;align-items:flex-end;gap:6px}
-.line img{height:380px;width:auto;max-width:none;transform:translateY(700px)}
+.line img{height:auto;max-height:380px;width:auto;max-width:330px;transform:translateY(700px)}
 .on .line img{animation:charIn .9s cubic-bezier(.2,.8,.3,1) forwards,bob2 1.2s ease-in-out infinite}
 .head{position:absolute;top:120px;left:0;right:0;text-align:center}
 .head h1{font-family:var(--body);font-weight:900;letter-spacing:-.04em;font-size:140px;line-height:1;color:#fff;opacity:0;text-shadow:0 10px 40px rgba(0,0,0,.25)}
@@ -194,9 +195,10 @@ $('pch').innerHTML=(P.characters||[]).filter(n=>IMG[n]).map((n,i)=>`<img alt="" 
 // finale
 const FN=F.finale;$('fh').textContent=FN.title;$('fp').textContent=FN.sub;$('flogo').textContent=FN.logo||F.brand;
 const cast=F.scenes.map(b=>b.img).filter(n=>IMG[n]);
-$('fl').innerHTML=cast.map((n,i)=>`<img alt="" src="${IMG[n]}" style="animation-delay:${.2+i*.18}s,${1.2+i*.12}s">`).join('')
+const fcast=[...new Set([H.character,...cast])].filter(n=>IMG[n]);$('fl').innerHTML=fcast.map((n,i)=>`<img alt="" src="${IMG[n]}" style="animation-delay:${.2+i*.18}s,${1.2+i*.12}s">`).join('')
  +Array.from({length:26},(_,k)=>`<i class="conf" style="left:${(k*73)%1900}px;background:${['#ffffff',pal.accent||'#ffc83d',pal.light||'#5fd0f2',pal.primary||'#0a87c2'][k%4]};animation-delay:${(k%9)*.3+1.4}s"></i>`).join('');
 // timeline
+document.querySelectorAll('.char img').forEach(im=>{const f=()=>{if(im.naturalWidth/im.naturalHeight>1.25){im.parentNode.classList.add('wide');im.parentNode.previousElementSibling?.classList.add('wide')}};im.complete?f():im.onload=f});
 const scenes=[...document.querySelectorAll('.scene')];
 const D=F.timing||{};const T=[0];[D.intro||4,D.history||6,...F.scenes.map(()=>D.scene||5.5),D.products||8.5].forEach(d=>T.push(T[T.length-1]+d));
 const END=T[T.length-1]+(D.finale||8);

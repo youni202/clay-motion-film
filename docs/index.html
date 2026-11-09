@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clay Motion Film — 클레이 캐릭터 기업 소개 모션</title>
+<meta name="description" content="회사 정보만 있으면 Gemini로 클레이 캐릭터와 음악을 만들어 1분 기업 소개 모션 필름을 완성합니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800;900&family=Gothic+A1:wght@500;700;800&display=swap">
+<style>
+:root{--bg:#f6f4ef;--ink:#14213d;--sub:#5b6478;--card:#fff;--line:#e6e1d6;--accent:#ff6b4a;--accent2:#2f6fed;--shadow:0 10px 30px rgba(20,33,61,.08)}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1422;--ink:#eef1f8;--sub:#a3acc2;--card:#182035;--line:#27304a;--shadow:0 10px 30px rgba(0,0,0,.35)}}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 "Gothic A1","Apple SD Gothic Neo",system-ui,sans-serif}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+header{padding:72px 0 40px}
+.eyebrow{font-family:Outfit,sans-serif;font-weight:800;letter-spacing:.16em;font-size:13px;color:var(--accent)}
+h1{font-family:Outfit,"Gothic A1",sans-serif;font-weight:900;font-size:clamp(40px,7vw,84px);line-height:1;letter-spacing:-.03em;margin:14px 0 18px}
+h1 span{color:var(--accent2)}
+.lead{font-size:clamp(18px,2.2vw,22px);color:var(--sub);max-width:720px;word-break:keep-all}
+.flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.flow b{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-weight:700;font-size:15px}
+.flow i{font-style:normal;color:var(--sub);align-self:center}
+h2{font-family:Outfit,"Gothic A1",sans-serif;font-size:30px;letter-spacing:-.02em;margin:56px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
+.card{display:block;text-decoration:none;background:var(--card);border-radius:22px;overflow:hidden;box-shadow:var(--shadow);transition:transform .25s}
+.card:hover{transform:translateY(-4px)}
+.card:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
+.thumb{position:relative;aspect-ratio:16/9;background:#dfe6f1}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.play{position:absolute;right:14px;bottom:14px;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;color:#14213d;font-size:18px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.meta{padding:18px 20px 22px}
+.meta b{display:block;font-size:20px;font-weight:800}
+.meta span{display:block;color:var(--sub);font-size:15px;margin-top:4px;word-break:keep-all}
+.tag{display:inline-block;margin-top:12px;font-size:12px;font-weight:800;letter-spacing:.08em;font-family:Outfit,sans-serif;color:var(--accent2);background:color-mix(in srgb,var(--accent2) 12%,transparent);padding:4px 10px;border-radius:99px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+.step em{font-style:normal;font-family:Outfit,sans-serif;font-weight:900;font-size:28px;color:var(--accent)}
+.step h3{font-size:19px;margin:6px 0}
+.step p{color:var(--sub);font-size:15px;word-break:keep-all}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:14px;background:color-mix(in srgb,var(--ink) 8%,transparent);padding:2px 6px;border-radius:6px}
+footer{margin:64px 0 40px;color:var(--sub);font-size:14px;border-top:1px solid var(--line);padding-top:20px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="eyebrow">CLAY MOTION FILM</div>
+  <h1>회사 이야기를<br><span>1분 클레이 모션</span>으로</h1>
+  <p class="lead">회사 정보를 넣으면 Gemini가 클레이 3D 캐릭터와 배경음악을 만들고, HTML 모션 엔진이 연혁·사업·제품을 담은 소개 필름 한 편을 완성합니다. 파일 하나로 어디서나 재생됩니다.</p>
+  <div class="flow"><b>① 회사 조사</b><i>→</i><b>② film.json 기획</b><i>→</i><b>③ Gemini 캐릭터·음악</b><i>→</i><b>④ 빌드</b><i>→</i><b>⑤ 단일 HTML · GitHub Pages</b></div>
+</header>
+
+<h2>만든 필름</h2>
+<div class="grid" id="grid"></div>
+
+<h2>직접 만들기</h2>
+<div class="steps">
+  <div class="step"><em>01</em><h3>AI 에이전트에게 링크만</h3><p>"이 저장소로 ○○ 회사 모션 필름 만들어줘" — 에이전트가 <code>AGENTS.md</code> 절차대로 조사부터 완성까지 진행해요.</p></div>
+  <div class="step"><em>02</em><h3>GitHub Actions 버튼 하나</h3><p>저장소 Secrets에 <code>GEMINI_API_KEY</code>를 넣고 Actions → <b>🎬 Make film</b>에서 회사 이름만 입력하면 Pages에 공개돼요.</p></div>
+  <div class="step"><em>03</em><h3>API 키 없이 Gemini 앱으로</h3><p><code>scripts/prompts.py</code>가 이미지·음악 프롬프트를 출력해요. Gemini 앱에서 만들어 <code>assets/</code>에 넣고 빌드하세요.</p></div>
+</div>
+
+<footer>
+  필름 속 사실은 각 회사의 공개 자료를 바탕으로 정리했으며, 회사 로고·상표는 사용하지 않았습니다(브랜드명은 텍스트로만 표기). 캐릭터는 모두 AI로 만든 오리지널 클레이 캐릭터입니다.
+  · <a href="https://github.com/youni202/clay-motion-film">GitHub 저장소</a>
+</footer>
+</div>
+<script>
+const FILMS=[
+ ['gea-korea','GEA 코리아','식품·음료·제약 공정 기술 — 수달 엔지니어와 6마리 친구들','Gemini 이미지·음악'],
+ ['atlas-copco-korea','아트라스콥코 코리아','압축기·진공·조립·파워 — 1873년부터 산업의 내일','클레이 6 캐릭터'],
+ ['mskorea','한국마이크로소프트','Copilot·Azure·Teams — 한국의 AI 전환과 함께','AI · 클라우드'],
+ ['cardif','BNP파리바 카디프생명','방카슈랑스부터 디지털까지, 일상을 지키는 보장','보험'],
+ ['optus','옵투스제약','국내 최초 1회용 무방부제 점안제 — 눈 건강 전문','제약'],
+ ['boryung','보령','연혁과 대표 제품으로 보는 보령','제약'],
+ ['fnf','F&F Style Gate','브랜드별 캐릭터로 만나는 F&F 스타일','패션']];
+document.getElementById('grid').innerHTML=FILMS.map(([s,n,d,t])=>`<a class="card" href="films/${s}.html"><div class="thumb"><img loading="lazy" src="thumbs/${s}.jpg" alt="${n} 필름 한 장면"><span class="play" aria-hidden="true">▶</span></div><div class="meta"><b>${n}</b><span>${d}</span><i class="tag">${t}</i></div></a>`).join('');
+</script>
+</body>
+</html>

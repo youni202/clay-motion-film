@@ -1,0 +1,261 @@
+{
+  "slug": "hyundaejisung",
+  "title": "현대지성 소개 필름",
+  "brand": "HYUNDAE JISUNG",
+  "since": 1982,
+  "now": 2026,
+  "palette": {
+    "primary": "#8a2c3b",
+    "deep": "#1f2a44",
+    "light": "#e8c97a",
+    "accent": "#e8c97a",
+    "stage": "#FBF7EF"
+  },
+  "art_direction": "Warm, bookish and wise. Burgundy, ink navy, warm gold and cream. Books always have plain covers without any text.",
+  "characters": {
+    "guide": "a wise friendly owl librarian in a cream cardigan with round glasses, holding an open plain hardcover book",
+    "bear": "a friendly bear in a navy sweater reaching out for a warm handshake, a plain burgundy book tucked under its arm",
+    "cat": "a cat philosopher in a simple white toga sitting thoughtfully on a stack of old plain books, chin on paw",
+    "fox": "a fox strategist in a burgundy vest holding a chess knight piece, standing beside a plain book",
+    "squirrel": "a squirrel student with a pencil, checking a small daily calendar page, a plain notebook in the other hand",
+    "penguin": "a penguin museum docent pointing at a small framed abstract painting on an easel"
+  },
+  "hero": "a stack of three plain colorful hardcover books (burgundy, navy, gold) with a glowing ribbon bookmark",
+  "intro": {
+    "sub": "**44년**, 고전과 교양으로 호기심을 채워 온 현대지성"
+  },
+  "history": {
+    "title": "SINCE 1982",
+    "sub": "2,800년 고전의 지혜를, 오늘의 독자에게",
+    "character": "guide",
+    "items": [
+      [
+        "BC 8C",
+        "오디세이아"
+      ],
+      [
+        "BC 5C",
+        "손자병법"
+      ],
+      [
+        "2C",
+        "명상록"
+      ],
+      [
+        "1532",
+        "군주론 출간"
+      ],
+      [
+        "1859",
+        "자유론"
+      ],
+      [
+        "1936",
+        "인간관계론 초판"
+      ],
+      [
+        "1982",
+        "현대지성 창립",
+        1
+      ],
+      [
+        "2019",
+        "인간관계론 초판 완역",
+        1
+      ]
+    ]
+  },
+  "scenes": [
+    {
+      "img": "bear",
+      "name": "RELATION",
+      "cat": "SELF-HELP",
+      "bg": "#FBF1EE",
+      "blob": "#F2D6D0",
+      "ac": "#8a2c3b",
+      "how": "사람을 얻는 오래된 지혜",
+      "tip": "『데일 카네기 인간관계론』 1936년 초판을 완역해, 개정판에서 빠졌던 5·6부까지 담았어요.",
+      "tags": [
+        "#인간관계론",
+        "#자기관리론",
+        "#초판완역"
+      ]
+    },
+    {
+      "img": "cat",
+      "name": "CLASSICS",
+      "cat": "HYUNDAE JISUNG CLASSIC",
+      "bg": "#F6F3EA",
+      "blob": "#E9E0C8",
+      "ac": "#7a5a1e",
+      "how": "2천 년을 건너온 문장들",
+      "tip": "『명상록』 『논어』 『도덕경』 『자유론』… 원전의 맛을 살린 번역으로 고전을 쉽게 만나요.",
+      "tags": [
+        "#명상록",
+        "#논어",
+        "#자유론"
+      ]
+    },
+    {
+      "img": "fox",
+      "name": "STRATEGY",
+      "cat": "STRATEGY CLASSICS",
+      "bg": "#F1F2F7",
+      "blob": "#D9DCEA",
+      "ac": "#1f2a44",
+      "how": "이기는 사람의 생각법",
+      "tip": "『손자병법』과 『군주론』, 시대를 넘어 읽히는 전략의 고전을 오늘의 언어로 옮겼어요.",
+      "tags": [
+        "#손자병법",
+        "#군주론",
+        "#전략"
+      ]
+    },
+    {
+      "img": "squirrel",
+      "name": "DAILY",
+      "cat": "LEARNING",
+      "bg": "#F1F7EF",
+      "blob": "#D5E8CF",
+      "ac": "#3d6b35",
+      "how": "하루 한 페이지의 힘",
+      "tip": "『1일1페이지 영어 어휘력365』처럼 매일 한 장씩, 『드디어 만나는 해부학 수업』처럼 쉽게 배워요.",
+      "tags": [
+        "#1일1페이지",
+        "#어휘력",
+        "#교양과학"
+      ]
+    },
+    {
+      "img": "penguin",
+      "name": "ART",
+      "cat": "HUMANITIES",
+      "bg": "#F4F0F8",
+      "blob": "#E2D8EE",
+      "ac": "#5b3f8a",
+      "how": "도슨트와 함께 걷는 미술관",
+      "tip": "『도슨트처럼 미술관 걷기』부터 『오디세이아』까지, 예술과 문학의 세계로 안내해요.",
+      "tags": [
+        "#미술관",
+        "#오디세이아",
+        "#인문교양"
+      ]
+    }
+  ],
+  "products": {
+    "tag": "BOOKSHELF",
+    "title": "현대지성의 서가",
+    "sub": "1982년부터 600종 이상 · Create Curious Contents",
+    "characters": [
+      "guide"
+    ],
+    "groups": [
+      {
+        "label": "자기계발",
+        "items": [
+          [
+            "인간관계론",
+            "데일 카네기",
+            "#8a2c3b",
+            "BEST"
+          ],
+          [
+            "자기관리론",
+            "데일 카네기",
+            "#a8454f"
+          ],
+          [
+            "행동하지 않으면",
+            "인생은 바뀌지 않는다",
+            "#c06a3a"
+          ]
+        ]
+      },
+      {
+        "label": "현대지성 클래식",
+        "items": [
+          [
+            "명상록",
+            "아우렐리우스",
+            "#1f2a44"
+          ],
+          [
+            "군주론",
+            "마키아벨리",
+            "#2f3f66"
+          ],
+          [
+            "논어",
+            "공자",
+            "#7a5a1e"
+          ],
+          [
+            "도덕경",
+            "노자",
+            "#9a7a32"
+          ]
+        ]
+      },
+      {
+        "label": "공부 · 교양",
+        "items": [
+          [
+            "1일1페이지 영어 어휘력365",
+            "매일 한 장",
+            "#3d6b35"
+          ],
+          [
+            "드디어 만나는 해부학 수업",
+            "교양과학",
+            "#4f8a6a"
+          ]
+        ]
+      },
+      {
+        "label": "예술 · 문학",
+        "items": [
+          [
+            "도슨트처럼 미술관 걷기",
+            "미술 교양",
+            "#5b3f8a"
+          ],
+          [
+            "오디세이아",
+            "호메로스",
+            "#7a5aa8"
+          ]
+        ]
+      }
+    ]
+  },
+  "finale": {
+    "title": "호기심이 지혜가 되도록",
+    "sub": "Create Curious Contents — 고전과 교양으로 여는 내일",
+    "logo": "HYUNDAE JISUNG"
+  },
+  "music": {
+    "prompt": "Warm, intelligent and hopeful music for a book publisher brand film: gentle piano, light pizzicato strings, clarinet and glockenspiel.",
+    "bpm": 104
+  },
+  "timing": {
+    "intro": 4,
+    "history": 6,
+    "scene": 5.5,
+    "products": 8.5,
+    "finale": 8
+  },
+  "sources": [
+    {
+      "title": "현대지성 채용공고 회사소개 (사람인)",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=54648449"
+    },
+    {
+      "title": "알라딘 현대지성 베스트·스테디",
+      "url": "https://www.aladin.co.kr/shop/wbrowse.aspx?CID=248784"
+    },
+    {
+      "title": "교보문고 데일 카네기 인간관계론 (현대지성)",
+      "url": "https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000002976687"
+    }
+  ]
+}

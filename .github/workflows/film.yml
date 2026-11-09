@@ -22,7 +22,7 @@ on:
         default: false
   push:
     branches: [main]
-    paths: ["films/**", "engine/**", "scripts/build.py"]
+    paths: ["films/**", "engine/**", "scripts/build.py", "docs/**"]
 
 permissions:
   contents: write
@@ -69,7 +69,8 @@ jobs:
             case "$d" in films/_*) continue;; esac
             if [ -f "$d/film.json" ] && [ -d "$d/assets" ]; then python scripts/build.py "$d"; fi
           done
-          python scripts/gallery.py
+          mkdir -p dist && cp -r docs/* dist/
+          for d in dist/*/; do s=$(basename "$d"); [ -f "$d/index.html" ] && cp "$d/index.html" "dist/films/$s.html" || true; done
 
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name == 'push' || !inputs.stop_after_plan

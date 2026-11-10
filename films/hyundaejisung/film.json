@@ -1,7 +1,7 @@
 {
   "slug": "hyundaejisung",
   "title": "현대지성 소개 필름",
-  "brand": "HYUNDAE JISUNG",
+  "brand": "현대지성",
   "since": 1982,
   "now": 2026,
   "palette": {
@@ -21,10 +21,11 @@
     "penguin": "a penguin museum docent pointing at a small framed abstract painting on an easel"
   },
   "intro": {
-    "sub": "**44년**, 고전과 교양으로 호기심을 채워 온 현대지성"
+    "sub": "**44년**, 고전과 교양으로 호기심을 채워 온 현대지성",
+    "status": "1982년 창립"
   },
   "history": {
-    "title": "SINCE 1982",
+    "title": "1982년부터",
     "sub": "1982년 창립부터 오늘까지, 서가를 채운 책들",
     "character": "guide",
     "items": [
@@ -42,8 +43,8 @@
         "『현대지성 클래식』 시작"
       ],
       [
-        "2019",
-        "『인간관계론』 초판 완역"
+        "2020",
+        "『인간관계론』 tvN 방송 소개"
       ],
       [
         "2021",
@@ -62,13 +63,15 @@
         "올해의 책 『행동하지 않으면…』",
         1
       ]
-    ]
+    ],
+    "tag": "연혁",
+    "status": "연혁"
   },
   "scenes": [
     {
       "img": "bear",
-      "name": "RELATION",
-      "cat": "SELF-HELP",
+      "name": "인간관계",
+      "cat": "자기계발",
       "bg": "#FBF1EE",
       "blob": "#F2D6D0",
       "ac": "#8a2c3b",
@@ -78,12 +81,13 @@
         "#인간관계론",
         "#자기관리론",
         "#초판완역"
-      ]
+      ],
+      "status": "인간관계"
     },
     {
       "img": "cat",
-      "name": "CLASSICS",
-      "cat": "HYUNDAE JISUNG CLASSIC",
+      "name": "고전",
+      "cat": "현대지성 클래식",
       "bg": "#F6F3EA",
       "blob": "#E9E0C8",
       "ac": "#7a5a1e",
@@ -93,12 +97,13 @@
         "#명상록",
         "#논어",
         "#자유론"
-      ]
+      ],
+      "status": "고전"
     },
     {
       "img": "fox",
-      "name": "STRATEGY",
-      "cat": "STRATEGY CLASSICS",
+      "name": "전략",
+      "cat": "전략 고전",
       "bg": "#F1F2F7",
       "blob": "#D9DCEA",
       "ac": "#1f2a44",
@@ -108,12 +113,13 @@
         "#손자병법",
         "#군주론",
         "#전략"
-      ]
+      ],
+      "status": "전략"
     },
     {
       "img": "squirrel",
-      "name": "DAILY",
-      "cat": "LEARNING",
+      "name": "매일 공부",
+      "cat": "공부 · 교양",
       "bg": "#F1F7EF",
       "blob": "#D5E8CF",
       "ac": "#3d6b35",
@@ -123,12 +129,13 @@
         "#1일1페이지",
         "#어휘력",
         "#교양과학"
-      ]
+      ],
+      "status": "매일 공부"
     },
     {
       "img": "penguin",
-      "name": "ART",
-      "cat": "HUMANITIES",
+      "name": "예술",
+      "cat": "인문 교양",
       "bg": "#F4F0F8",
       "blob": "#E2D8EE",
       "ac": "#5b3f8a",
@@ -138,13 +145,14 @@
         "#미술관",
         "#오디세이아",
         "#인문교양"
-      ]
+      ],
+      "status": "예술"
     }
   ],
   "products": {
-    "tag": "BOOKSHELF",
+    "tag": "서가",
     "title": "현대지성의 서가",
-    "sub": "1982년부터 600종 이상 · Create Curious Contents",
+    "sub": "1982년부터 600종이 넘는 책을 만들어 왔어요",
     "characters": [
       "guide"
     ],
@@ -225,12 +233,14 @@
           ]
         ]
       }
-    ]
+    ],
+    "status": "서가"
   },
   "finale": {
     "title": "호기심이 지혜가 되도록",
-    "sub": "Create Curious Contents — 고전과 교양으로 여는 내일",
-    "logo": "HYUNDAE JISUNG"
+    "sub": "고전과 교양으로, 호기심이 지혜가 되는 내일을",
+    "logo": "현대지성",
+    "status": "함께"
   },
   "music": {
     "prompt": "Warm, intelligent and hopeful music for a book publisher brand film: gentle piano, light pizzicato strings, clarinet and glockenspiel.",

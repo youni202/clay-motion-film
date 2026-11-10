@@ -167,7 +167,7 @@ $('brand').textContent=F.brand;document.title=F.title||F.brand;
 $('hero').innerHTML=IMG.hero?`<img alt="" src="${IMG.hero}">`:'';
 $('yr').textContent=F.since;$('isub').innerHTML=rich(F.intro.sub);
 // history
-const H=F.history;$('htag').textContent=`01 · HISTORY`;$('hh').textContent=H.title;$('hp').textContent=H.sub;
+const H=F.history;$('htag').textContent=`01 · ${H.tag||'HISTORY'}`;$('hh').textContent=H.title;$('hp').textContent=H.sub;
 $('ms').innerHTML=H.items.map(([y,t,h],k)=>`<div class="ms${h?' hi':''}" style="left:${(k/Math.max(1,H.items.length-1))*100}%;animation-delay:${.8+k*.34}s"><div class="y">${esc(y)}</div><i class="d"></i><div class="t">${esc(t)}</div></div>`).join('');
 if(IMG[H.character])$('hch').src=IMG[H.character];else $('hch').remove();
 // story scenes
@@ -202,7 +202,7 @@ document.querySelectorAll('.char img').forEach(im=>{const f=()=>{if(im.naturalWi
 const scenes=[...document.querySelectorAll('.scene')];
 const D=F.timing||{};const T=[0];[D.intro||4,D.history||6,...F.scenes.map(()=>D.scene||5.5),D.products||8.5].forEach(d=>T.push(T[T.length-1]+d));
 const END=T[T.length-1]+(D.finale||8);
-const status=['Since '+F.since,'History',...F.scenes.map(b=>b.status||b.name),P.status||'Lineup',FN.status||'Together'];
+const status=[F.intro.status||('Since '+F.since),H.status||'History',...F.scenes.map(b=>b.status||b.name),P.status||'Lineup',FN.status||'Together'];
 let timers=[],raf,t0,soundOn=false;
 function countYear(){const a=+F.since,z=+(F.now||new Date().getFullYear()),yr=$('yr');yr.textContent=a;const step=Math.max(1,Math.ceil((z-a)/50));
   timers.push(setTimeout(()=>{let y=a;const iv=setInterval(()=>{y=Math.min(z,y+step);yr.textContent=y;if(y>=z)clearInterval(iv)},30);timers.push(iv)},500))}

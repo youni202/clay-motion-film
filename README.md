@@ -1,6 +1,6 @@
 # 🎬 Clay Motion Film
 
-**▶ 만든 필름 보기: https://youni202.github.io/clay-motion-film/**  (GEA 코리아 · 아트라스콥코 코리아 · 한국마이크로소프트 · BNP파리바 카디프생명 · 옵투스제약 · 보령 · F&F)
+**▶ 만든 필름 보기: https://youni202.github.io/clay-motion-film/**  (현대지성 · GEA 코리아 · 아트라스콥코 코리아 · 한국마이크로소프트 · BNP파리바 카디프생명 · 옵투스제약 · 보령 · F&F)
 
 Turn a company's information into a **1-minute intro motion film with clay 3D characters**.
 **Gemini** generates the images and music; an HTML motion engine assembles them into a single file you can play anywhere.

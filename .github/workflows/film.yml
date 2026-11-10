@@ -20,14 +20,9 @@ on:
         description: "이미지·음악을 모두 새로 만들기"
         type: boolean
         default: false
-  push:
-    branches: [main]
-    paths: ["films/**", "engine/**", "scripts/build.py", "docs/**"]
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency: { group: film, cancel-in-progress: false }
 
@@ -53,31 +48,18 @@ jobs:
         env: { SLUG: "${{ inputs.slug }}", FORCE: "${{ inputs.regenerate && '--force' || '' }}" }
         run: python scripts/gen_assets.py "films/$SLUG" $FORCE
 
-      - name: Commit film source
-        if: github.event_name == 'workflow_dispatch'
+      - name: Build film into docs/ (GitHub Pages)
+        if: ${{ !inputs.stop_after_plan }}
+        env: { SLUG: "${{ inputs.slug }}" }
+        run: |
+          python scripts/build.py "films/$SLUG"
+          mkdir -p docs/films && cp "dist/$SLUG/index.html" "docs/films/$SLUG.html"
+
+      - name: Commit
+        env: { SLUG: "${{ inputs.slug }}" }
         run: |
           git config user.name "film-bot"
           git config user.email "film-bot@users.noreply.github.com"
-          git add films
+          git add films docs
           git diff --cached --quiet || { git commit -m "film: $SLUG" && git push; }
-        env: { SLUG: "${{ inputs.slug }}" }
-
-      - name: Build every film
-        if: github.event_name == 'push' || !inputs.stop_after_plan
-        run: |
-          for d in films/*/; do
-            case "$d" in films/_*) continue;; esac
-            if [ -f "$d/film.json" ] && [ -d "$d/assets" ]; then python scripts/build.py "$d"; fi
-          done
-          mkdir -p dist && cp -r docs/* dist/
-          for d in dist/*/; do s=$(basename "$d"); [ -f "$d/index.html" ] && cp "$d/index.html" "dist/films/$s.html" || true; done
-
-      - uses: actions/upload-pages-artifact@v3
-        if: github.event_name == 'push' || !inputs.stop_after_plan
-        with: { path: dist }
-      - id: deploy
-        if: github.event_name == 'push' || !inputs.stop_after_plan
-        uses: actions/deploy-pages@v4
-      - name: Link
-        if: steps.deploy.outcome == 'success'
-        run: echo "### ▶ ${{ steps.deploy.outputs.page_url }}${{ inputs.slug }}/" >> "$GITHUB_STEP_SUMMARY"
+          echo "### ▶ https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/films/$SLUG.html" >> "$GITHUB_STEP_SUMMARY"

@@ -1,7 +1,7 @@
 {
   "slug": "gea-korea",
   "title": "GEA 코리아 소개 필름",
-  "brand": "GEA KOREA",
+  "brand": "GEA 코리아",
   "since": 1881,
   "now": 2026,
   "palette": {
@@ -21,16 +21,19 @@
     "fox": "a fox hugging a green leaf next to a cute compact heat pump unit with a green energy gauge"
   },
   "intro": {
-    "sub": "**145년**, 더 나은 세상을 위한 엔지니어링"
+    "sub": "**145년**, 더 나은 세상을 위한 엔지니어링",
+    "status": "1881년부터"
   },
   "history": {
-    "title": "SINCE 1881",
-    "sub": "프랑크푸르트에서 시작해, 식품·제약 기술의 리더로",
+    "title": "1881년부터",
+    "tag": "연혁",
+    "status": "연혁",
+    "sub": "금속 무역회사에서, 식품·제약 기술의 리더로",
     "character": "guide",
     "items": [
       [
         "1881",
-        "MG 창립 (프랑크푸르트)",
+        "프랑크푸르트 MG 창립",
         1
       ],
       [
@@ -38,15 +41,11 @@
         "GEA 설립 (보훔)"
       ],
       [
-        "1976",
-        "NIRO 분무건조기"
-      ],
-      [
         "1999",
-        "Westfalia 등 인수"
+        "MG, GEA 인수"
       ],
       [
-        "2006",
+        "2005",
         "GEA Group 출범"
       ],
       [
@@ -55,7 +54,11 @@
       ],
       [
         "2021",
-        "2040 넷제로 목표 발표"
+        "2040 넷제로 목표"
+      ],
+      [
+        "2024",
+        "Mission 30 발표"
       ],
       [
         "2025",
@@ -67,84 +70,90 @@
   "scenes": [
     {
       "img": "calf",
-      "name": "DAIRY",
-      "cat": "DAIRY PROCESSING",
+      "name": "유가공",
+      "cat": "유가공 기술",
       "bg": "#EEF6FC",
       "blob": "#D3E8F7",
       "ac": "#0a6fc2",
       "how": "매일 마시는 우유 곁에",
-      "tip": "원심분리기·균질기로 우유를 깨끗하고 고르게. 전 세계 가공 우유의 약 4분의 1이 GEA 장비를 거쳐요.",
+      "tip": "원심분리기·균질기로 우유를 깨끗하고 고르게. 가공 우유의 4분의 1이 GEA 생산 설비에서 나와요.",
       "tags": [
         "#원심분리기",
         "#균질기",
-        "#유가공"
-      ]
+        "#우유"
+      ],
+      "status": "유가공"
     },
     {
       "img": "hamster",
-      "name": "FOOD",
-      "cat": "FOOD PROCESSING",
+      "name": "식품",
+      "cat": "식품 가공",
       "bg": "#FDF6EA",
       "blob": "#F6E2BC",
       "ac": "#b5650a",
       "how": "식탁 위 익숙한 그 맛",
       "tip": "스파게티 4봉지 중 1봉지, 쿠키 5개 중 1개, 치킨너겟 3개 중 1개가 GEA 기술로 만들어져요.",
       "tags": [
-        "#식품가공",
         "#스파게티",
-        "#쿠키"
-      ]
+        "#쿠키",
+        "#치킨너겟"
+      ],
+      "status": "식품"
     },
     {
       "img": "duck",
-      "name": "BEVERAGE",
-      "cat": "BEVERAGE & POWDER",
+      "name": "음료",
+      "cat": "음료 · 분말",
       "bg": "#F6F1EC",
       "blob": "#E8D9C8",
       "ac": "#7a4a2a",
-      "how": "한 잔의 커피가 되기까지",
-      "tip": "분무건조기로 액체를 고운 분말로. 인스턴트 커피 공정 라인 3개 중 1개가 GEA 기술이에요.",
+      "how": "한 잔이 되기까지",
+      "tip": "인스턴트 커피 공정 라인 3개 중 1개를 GEA가 설치했고, 맥주 2리터 중 1리터가 GEA 설비로 양조돼요.",
       "tags": [
         "#분무건조",
         "#인스턴트커피",
-        "#분말"
-      ]
+        "#맥주"
+      ],
+      "status": "음료"
     },
     {
       "img": "rabbit",
-      "name": "PHARMA",
-      "cat": "PHARMA & HEALTHCARE",
+      "name": "제약",
+      "cat": "제약 · 헬스케어",
       "bg": "#F1F2FA",
       "blob": "#DADDF2",
       "ac": "#4b4fae",
       "how": "더 건강한 내일을 위해",
-      "tip": "정제기와 무균 공정 기술로 의약품을 만들어요. 항암제 정제 2개 중 1개가 GEA 장비에서 생산돼요.",
+      "tip": "항암제 정제 2개 중 1개, 제약용 원심분리기 2대 중 1대가 GEA 기술이에요.",
       "tags": [
         "#정제기",
-        "#무균공정",
-        "#제약"
-      ]
+        "#제약분리기",
+        "#헬스케어"
+      ],
+      "status": "제약"
     },
     {
       "img": "fox",
-      "name": "PLANET",
-      "cat": "HEATING & REFRIGERATION",
+      "name": "지구",
+      "cat": "히트펌프 · 냉동",
       "bg": "#EEF8F0",
       "blob": "#CFEBD6",
       "ac": "#2b8a4b",
       "how": "에너지는 줄이고, 내일은 키우고",
-      "tip": "히트펌프와 산업용 냉동 기술로 공장의 에너지를 아끼고, 2040년 넷제로를 향해 가요.",
+      "tip": "2040년 넷제로를 목표로 SBTi 검증을 받았어요. 히트펌프와 산업용 냉동 기술로 에너지를 아껴요.",
       "tags": [
         "#히트펌프",
         "#산업냉동",
         "#넷제로2040"
-      ]
+      ],
+      "status": "지구"
     }
   ],
   "products": {
-    "tag": "GEA IN KOREA",
-    "title": "GEA TECHNOLOGY",
-    "sub": "서울·부산 오피스 · 150개국 이상 · 임직원 18,000명+",
+    "tag": "한국의 GEA",
+    "status": "제품",
+    "title": "GEA의 기술",
+    "sub": "임직원 18,000명+ · 150개국+ · 2026 한국 ‘Top Employer’ 인증",
     "characters": [
       "guide"
     ],
@@ -153,23 +162,23 @@
         "label": "분리 · 유체",
         "items": [
           [
-            "Separator",
             "원심분리기",
+            "유가공 · 제약",
             "#0a6fc2"
           ],
           [
-            "Homogenizer",
             "균질기",
+            "우유 · 음료",
             "#0b1f4a"
           ],
           [
-            "Hygienic Pump",
             "위생 펌프",
+            "식품 공정",
             "#2f6db0"
           ],
           [
-            "Valve",
             "위생 밸브",
+            "배관 제어",
             "#4a86c8"
           ]
         ]
@@ -178,13 +187,13 @@
         "label": "건조 · 농축",
         "items": [
           [
-            "Spray Dryer",
             "분무건조기",
+            "분말 제조",
             "#7a4a2a"
           ],
           [
-            "Evaporator",
             "증발 농축기",
+            "농축 공정",
             "#a0612f"
           ]
         ]
@@ -193,13 +202,13 @@
         "label": "식품 · 제약",
         "items": [
           [
-            "Food Line",
             "식품 가공 라인",
+            "성형 · 조리",
             "#b5650a"
           ],
           [
-            "Tablet Press",
             "정제기",
+            "의약품 생산",
             "#4b4fae"
           ]
         ]
@@ -208,14 +217,14 @@
         "label": "냉동 · 에너지",
         "items": [
           [
-            "Heat Pump",
             "히트펌프",
+            "에너지 절감",
             "#2b8a4b",
             "ESG"
           ],
           [
-            "Refrigeration",
             "산업용 냉동",
+            "냉동 · 냉장",
             "#1f7a6a"
           ]
         ]
@@ -224,8 +233,9 @@
   },
   "finale": {
     "title": "더 나은 세상을, 함께",
-    "sub": "Engineering for a better world — 식탁과 건강, 지구의 내일을 위한 기술",
-    "logo": "GEA KOREA"
+    "sub": "더 나은 세상을 위한 엔지니어링 — 식탁과 건강, 지구의 내일을 위해",
+    "logo": "GEA 코리아",
+    "status": "함께"
   },
   "music": {
     "prompt": "Bright, fresh and hopeful corporate brand film music: clear marimba and plucked guitar intro, light rhythmic percussion, warm strings building up.",
@@ -241,19 +251,19 @@
   "sources": [
     {
       "title": "GEA — Our Company",
-      "url": "https://gea.com/zh/company/about-us"
+      "url": "https://www.gea.com/en/company/about-us"
     },
     {
       "title": "GEA — Our heritage",
-      "url": "https://gea.com/zh/company/about-us/our-heritage"
+      "url": "https://www.gea.com/en/company/about-us/our-heritage"
     },
     {
-      "title": "GEA South Korea — locations",
-      "url": "https://www.gea.com/zh/south-korea/"
+      "title": "GEA enters DAX 40 (2025)",
+      "url": "https://www.gea.com/en/news/corporate/2025/gea-enters-dax40-index/"
     },
     {
-      "title": "GEA 2025 financial results (EQS News)",
-      "url": "https://www.investegate.co.uk/announcement/eqs/gea-group-aktiengesellschaft--0mpj/eqs-news-2025-financial-results-gea-reports-/9463404"
+      "title": "GEA Top Employer Asia Pacific (2026)",
+      "url": "https://www.gea.com/en/news/corporate/2026/gea-top-employer-asia-pacific"
     }
   ]
 }

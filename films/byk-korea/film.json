@@ -1,0 +1,261 @@
+{
+  "slug": "byk-korea",
+  "title": "BYK 코리아 소개 필름",
+  "brand": "BYK 코리아",
+  "since": 1873,
+  "now": 2026,
+  "palette": {
+    "primary": "#0067a5",
+    "deep": "#0a2a4a",
+    "light": "#49c2e6",
+    "accent": "#f2b632",
+    "stage": "#F2F8FC"
+  },
+  "art_direction": "Curious, friendly specialty-chemistry experts. Deep blue and sky blue outfits with small warm-yellow details.",
+  "characters": {
+    "guide": "a friendly seal chemist in a white lab coat and round safety goggles holding up a test tube with swirling colorful liquid",
+    "panda": "a panda painter in blue overalls rolling a paint roller that leaves a smooth glossy blue stripe",
+    "turtle": "a turtle in a sky-blue apron holding a clear jar of colorful recycled plastic pellets",
+    "meerkat": "a meerkat inspector holding a small handheld color measuring device against color swatch cards",
+    "octopus": "an octopus scientist in a lab coat looking through a microscope with tiny glowing particles",
+    "koala": "a koala hugging a big green leaf next to a clear flask of clean sparkling water"
+  },
+  "hero": "a glossy blue paint drop splashing into a crown shape beside a small test tube with yellow liquid",
+  "intro": {
+    "sub": "**153년**, 작은 한 방울로 품질을 바꿔 온 첨가제 전문가",
+    "status": "1873년부터"
+  },
+  "history": {
+    "title": "1873년부터",
+    "tag": "연혁",
+    "status": "연혁",
+    "sub": "작은 화학 공장에서, 세계적인 첨가제 기업으로",
+    "character": "guide",
+    "items": [
+      [
+        "1873",
+        "하인리히 비크 화학공장 창립",
+        1
+      ],
+      [
+        "1935",
+        "첫 BYK 도료 첨가제"
+      ],
+      [
+        "1962",
+        "독일 베젤 공장 설립"
+      ],
+      [
+        "1984",
+        "BYK-Chemie 설립"
+      ],
+      [
+        "1988",
+        "BYK-Chemie 코리아 서울 설립",
+        1
+      ],
+      [
+        "2004",
+        "첫 나노 첨가제 출시"
+      ],
+      [
+        "2018",
+        "탄소섬유용 첫 커플링제"
+      ],
+      [
+        "2023",
+        "창립 150주년",
+        1
+      ]
+    ]
+  },
+  "scenes": [
+    {
+      "img": "panda",
+      "name": "도료",
+      "cat": "도료 · 잉크 첨가제",
+      "status": "도료",
+      "bg": "#EEF6FB",
+      "blob": "#CFE6F4",
+      "ac": "#0067a5",
+      "how": "매끈한 색을 만드는 한 방울",
+      "tip": "1935년 첫 도료 첨가제 이후, DISPERBYK 같은 분산제로 안료를 고르게 퍼뜨려 페인트 품질을 지켜요.",
+      "tags": [
+        "#분산제",
+        "#도료",
+        "#잉크"
+      ]
+    },
+    {
+      "img": "turtle",
+      "name": "플라스틱",
+      "cat": "플라스틱 첨가제",
+      "status": "플라스틱",
+      "bg": "#EEF8F2",
+      "blob": "#D2EBDC",
+      "ac": "#2b8a5b",
+      "how": "재활용 플라스틱도 새것처럼",
+      "tip": "RECYLOBYK 첨가제로 재활용 플라스틱의 품질을 높여, 다시 쓰는 소재의 가능성을 넓혀요.",
+      "tags": [
+        "#RECYLOBYK",
+        "#재활용",
+        "#플라스틱"
+      ]
+    },
+    {
+      "img": "meerkat",
+      "name": "측정",
+      "cat": "측정 · 시험 기기",
+      "status": "측정",
+      "bg": "#FDF7EA",
+      "blob": "#F6E6BE",
+      "ac": "#a36a00",
+      "how": "색과 광택을 숫자로",
+      "tip": "BYK-Gardner 측정·시험 기기로 색상, 광택, 외관과 물성을 정확하게 확인해요.",
+      "tags": [
+        "#BYK_Gardner",
+        "#색차계",
+        "#광택계"
+      ]
+    },
+    {
+      "img": "octopus",
+      "name": "혁신",
+      "cat": "연구 · 신기술",
+      "status": "혁신",
+      "bg": "#F2F1FA",
+      "blob": "#DCD9F2",
+      "ac": "#4b47a8",
+      "how": "세상에 없던 첨가제를 처음으로",
+      "tip": "2004년 긁힘에 강한 도료용 첫 나노 첨가제를, 2018년 탄소섬유용 첫 커플링제를 선보였어요.",
+      "tags": [
+        "#나노첨가제",
+        "#탄소섬유",
+        "#신기술"
+      ]
+    },
+    {
+      "img": "koala",
+      "name": "지속가능",
+      "cat": "지속가능 솔루션",
+      "status": "지속가능",
+      "bg": "#EFF8EE",
+      "blob": "#D3EBD0",
+      "ac": "#3d7a34",
+      "how": "더 안전한 소재, 더 나은 내일",
+      "tip": "PFAS-free 첨가제 솔루션으로 고객이 더 안전하고 지속가능한 제품을 만들도록 도와요.",
+      "tags": [
+        "#PFASfree",
+        "#지속가능",
+        "#친환경"
+      ]
+    }
+  ],
+  "products": {
+    "tag": "BYK 솔루션",
+    "status": "솔루션",
+    "title": "BYK 솔루션",
+    "sub": "임직원 2,700명+ · 5개국 생산 거점 · 150년 넘는 혁신",
+    "characters": [
+      "guide"
+    ],
+    "groups": [
+      {
+        "label": "분산 · 표면",
+        "items": [
+          [
+            "DISPERBYK",
+            "습윤 · 분산제",
+            "#0067a5"
+          ],
+          [
+            "BYK 소포제",
+            "기포 제거",
+            "#0a2a4a"
+          ]
+        ]
+      },
+      {
+        "label": "유변 · 기능",
+        "items": [
+          [
+            "RHEOBYK",
+            "유변 조절제",
+            "#2f6db0"
+          ],
+          [
+            "CERAFLOUR",
+            "왁스 첨가제",
+            "#a36a00"
+          ],
+          [
+            "NANOBYK",
+            "나노 첨가제",
+            "#4b47a8"
+          ]
+        ]
+      },
+      {
+        "label": "재활용",
+        "items": [
+          [
+            "RECYLOBYK",
+            "재활용 첨가제",
+            "#2b8a5b",
+            "ESG"
+          ]
+        ]
+      },
+      {
+        "label": "측정 기기",
+        "items": [
+          [
+            "spectro-guide",
+            "색상 측정",
+            "#c05a2a"
+          ],
+          [
+            "micro-gloss",
+            "광택 측정",
+            "#7a5aa8"
+          ]
+        ]
+      }
+    ]
+  },
+  "finale": {
+    "title": "작은 한 방울, 큰 차이",
+    "sub": "BYK — 여러분 곁의 첨가제 전문가",
+    "logo": "BYK 코리아",
+    "status": "함께"
+  },
+  "music": {
+    "prompt": "Bright, curious corporate music for a specialty chemistry brand: pizzicato, marimba, soft synth pads, upbeat beat and warm strings.",
+    "bpm": 112
+  },
+  "timing": {
+    "intro": 4,
+    "history": 6,
+    "scene": 5.5,
+    "products": 8.5,
+    "finale": 8
+  },
+  "sources": [
+    {
+      "title": "BYK — Company information",
+      "url": "https://www.byk.com/en/company-news/company-information"
+    },
+    {
+      "title": "ALTANA — History",
+      "url": "https://www.altana.com/company/history.html"
+    },
+    {
+      "title": "BYK Additives & Instruments (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/BYK_Additives_%26_Instruments"
+    },
+    {
+      "title": "BYK — The RECYLOBYK family (K 2025)",
+      "url": "https://www.byk.com/ko/company-news/shows-events/k2025"
+    }
+  ]
+}

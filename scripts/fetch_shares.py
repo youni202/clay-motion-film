@@ -15,13 +15,13 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
 
 def get(url, method="GET"):
     req = urllib.request.Request(url, headers=UA, method=method)
-    return urllib.request.urlopen(req, timeout=60)
+    return urllib.request.urlopen(req, timeout=20)
 
 
 def candidates(page):
     page = page.replace("\\u002F", "/").replace("\\/", "/").replace("\\u003d", "=").replace("\\u0026", "&")
     page = html.unescape(page)
-    urls = set(re.findall(r'https://[A-Za-z0-9.\-]+\.(?:googleusercontent|gstatic|ggpht)\.com/[^\s"\'<>\\)]+', page))
+    urls = set(re.findall(r'https://[A-Za-z0-9.\-]+\.(?:googleusercontent|ggpht)\.com/[^\s"\'<>\\)]+', page))
     og = re.findall(r'<meta[^>]+property="og:(?:image|audio|video)(?::url)?"[^>]+content="([^"]+)"', page)
     return og, sorted(urls)
 
@@ -32,7 +32,10 @@ def fetch_image(urls):
     for u in urls:
         for v in (re.sub(r"=[a-zA-Z0-9\-_]+$", "", u) + "=s0", u):
             try:
-                data = get(v).read()
+                r = get(v)
+                if not r.headers.get("Content-Type", "").startswith("image/"):
+                    continue
+                data = r.read()
                 im = Image.open(io.BytesIO(data))
                 score = im.size[0] * im.size[1]
                 if best is None or score > best[0]:
@@ -68,8 +71,8 @@ def main(film_dir):
     for key, link in shares.items():
         page = get(link).read().decode("utf-8", "replace")
         og, urls = candidates(page)
-        ordered = og + [u for u in urls if u not in og]
-        print(f"{key}: {len(og)} og, {len(urls)} candidate urls")
+        ordered = (og + [u for u in urls if u not in og])[:25]
+        print(f"{key}: {len(og)} og, {len(urls)} candidate urls; hosts:", sorted({u.split('/')[2] for u in ordered}), flush=True)
         if key == "bgm":
             got = fetch_audio(ordered)
             if got:

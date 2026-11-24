@@ -18,7 +18,7 @@ concurrency: { group: fetch-shares, cancel-in-progress: true }
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 2 }
@@ -26,6 +26,9 @@ jobs:
         with: { python-version: "3.12" }
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: pip install -q -r requirements.txt
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm i --no-save playwright@1.48.2 && npx playwright install --with-deps chromium
       - name: Find films to build
         id: films
         env: { INPUT_SLUG: "${{ inputs.slug }}" }
@@ -37,7 +40,7 @@ jobs:
         env: { LIST: "${{ steps.films.outputs.list }}" }
         run: |
           for s in $LIST; do
-            timeout 600 python -u scripts/fetch_shares.py "films/$s"
+            timeout 900 node scripts/fetch_shares.js "films/$s"
             python scripts/build.py "films/$s"
             mkdir -p docs/films docs/thumbs
             cp "dist/$s/index.html" "docs/films/$s.html"

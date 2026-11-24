@@ -55,6 +55,9 @@ node scripts/preview.js dist/hyundaejisung/index.html      # 장면별 스크린
 **API 키가 없다면?** `python scripts/prompts.py films/<이름>`이 Gemini 앱에 그대로 붙여 넣을 프롬프트를 출력해요.
 Gemini 앱에서 만든 이미지·음악을 `films/<이름>/assets/`에 넣고 `build.py`를 실행하면 됩니다.
 
+**파일을 내려받기 어렵다면?** Gemini 앱에서 이미지마다 [이미지 공유], 음악은 [트랙 공유]로 공개 링크를 만들어 `films/<이름>/assets/shares.json`에 적고 올리세요.
+`{"guide": "https://share.gemini.google/…", …, "bgm": "https://share.gemini.google/…"}` 형식이에요. GitHub Actions(📥 Build film from Gemini share links)가 링크에서 이미지·음악을 받아 필름을 빌드하고 소개 페이지에 올려 줘요.
+
 ## 폴더 구조
 ```
 engine/template.html   모션 엔진 (1920×1080 무대, 화면 크기에 맞춰 자동 확대·축소)

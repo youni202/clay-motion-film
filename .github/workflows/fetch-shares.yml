@@ -1,0 +1,48 @@
+name: 📥 Build film from Gemini share links
+
+on:
+  push:
+    branches: [main]
+    paths: ["films/*/assets/shares.json"]
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "films/<slug>"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q -r requirements.txt
+      - name: Find films to build
+        id: films
+        env: { INPUT_SLUG: "${{ inputs.slug }}" }
+        run: |
+          if [ -n "$INPUT_SLUG" ]; then echo "list=$INPUT_SLUG" >> "$GITHUB_OUTPUT"; exit 0; fi
+          list=$(git diff --name-only HEAD~1 HEAD | grep -E '^films/[^/]+/assets/shares.json$' | cut -d/ -f2 | sort -u | tr '\n' ' ')
+          echo "list=$list" >> "$GITHUB_OUTPUT"
+      - name: Download, build, publish to docs/
+        env: { LIST: "${{ steps.films.outputs.list }}" }
+        run: |
+          for s in $LIST; do
+            python scripts/fetch_shares.py "films/$s"
+            python scripts/build.py "films/$s"
+            mkdir -p docs/films docs/thumbs
+            cp "dist/$s/index.html" "docs/films/$s.html"
+          done
+      - name: Commit
+        env: { LIST: "${{ steps.films.outputs.list }}" }
+        run: |
+          git config user.name "film-bot"
+          git config user.email "film-bot@users.noreply.github.com"
+          git add films docs
+          git diff --cached --quiet || { git commit -m "film from shares: $LIST" && git push; }

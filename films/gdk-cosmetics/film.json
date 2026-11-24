@@ -1,0 +1,241 @@
+{
+  "slug": "gdk-cosmetics",
+  "title": "GDK화장품 소개 필름",
+  "brand": "GDK화장품",
+  "since": 2003,
+  "now": 2026,
+  "palette": {
+    "primary": "#d94f76",
+    "deep": "#3a1f45",
+    "light": "#ffb8cc",
+    "accent": "#7ccfc0",
+    "stage": "#FFF6F8"
+  },
+  "art_direction": "Gentle, trustworthy beauty experts. Rose pink, soft mint and cream outfits. Product containers are plain without labels.",
+  "characters": {
+    "guide": "a friendly bunny cosmetics researcher in a pink lab coat holding up a small glass dropper serum bottle",
+    "cat": "a cat relaxing with a white sheet face mask on its face, giving a thumbs up",
+    "hamster": "a hamster holding a plain cream jar and dabbing cream on its cheek",
+    "otter": "an otter in a straw sun hat holding a plain sunscreen tube",
+    "owl": "an owl quality inspector in a lab coat holding a clipboard with a green check mark",
+    "penguin": "a penguin traveler with a small globe and a stack of gift boxes"
+  },
+  "hero": "a glossy plain pink sheet-mask pouch beside a small glass dropper bottle with water drops",
+  "intro": {
+    "sub": "**23년**, 마스크 시트 한 장에 정성을 담아 온 GDK화장품",
+    "status": "2003년부터"
+  },
+  "history": {
+    "title": "2003년부터",
+    "tag": "연혁",
+    "status": "연혁",
+    "sub": "마스크 시트 전문 기업에서, 글로벌 뷰티 파트너로",
+    "character": "guide",
+    "items": [
+      [
+        "2003",
+        "GDK화장품 창립",
+        1
+      ],
+      [
+        "2011",
+        "법인 설립 · ISO 9001"
+      ],
+      [
+        "2014",
+        "ISO 22716 인증"
+      ],
+      [
+        "2016",
+        "인천 본사 신축"
+      ],
+      [
+        "2017",
+        "서울 R&D센터 증설"
+      ],
+      [
+        "2020",
+        "글로벌 물류센터 인수"
+      ],
+      [
+        "2025",
+        "솔루엠 코스메틱 합류",
+        1
+      ]
+    ]
+  },
+  "scenes": [
+    {
+      "img": "cat",
+      "name": "마스크 시트",
+      "cat": "주력 제품",
+      "status": "마스크",
+      "bg": "#FFF1F4",
+      "blob": "#FFD6E1",
+      "ac": "#d94f76",
+      "how": "한 장에 담은 촉촉함",
+      "tip": "2003년 창립 이후 마스크 시트 제품을 주력으로 개발·생산해 온 마스크 전문 기업이에요.",
+      "tags": [
+        "#마스크팩",
+        "#시트마스크",
+        "#K뷰티"
+      ]
+    },
+    {
+      "img": "hamster",
+      "name": "스킨케어",
+      "cat": "기초 · 기능성 화장품",
+      "status": "스킨케어",
+      "bg": "#F4F1FB",
+      "blob": "#E0D9F3",
+      "ac": "#6a4fa8",
+      "how": "매일 바르는 기초부터",
+      "tip": "기초 화장품부터 기능성 화장품까지 직접 개발하고 생산해요.",
+      "tags": [
+        "#기초화장품",
+        "#기능성",
+        "#스킨케어"
+      ]
+    },
+    {
+      "img": "otter",
+      "name": "선 · 바디",
+      "cat": "선케어 · 바디 · 헤어",
+      "status": "선케어",
+      "bg": "#FFF8EC",
+      "blob": "#FBE6BF",
+      "ac": "#b5760a",
+      "how": "햇살 아래에서도 든든하게",
+      "tip": "선블록과 바디·헤어 제품까지, 피부와 머리끝까지 챙기는 제품을 만들어요.",
+      "tags": [
+        "#선블록",
+        "#바디케어",
+        "#헤어케어"
+      ]
+    },
+    {
+      "img": "owl",
+      "name": "품질",
+      "cat": "품질 · 인증",
+      "status": "품질",
+      "bg": "#EEF8F5",
+      "blob": "#CDEBE3",
+      "ac": "#2a8a75",
+      "how": "믿을 수 있는 공정",
+      "tip": "2011년 ISO 9001, 2014년 화장품 GMP 국제표준인 ISO 22716 인증을 받았어요.",
+      "tags": [
+        "#ISO22716",
+        "#ISO9001",
+        "#품질관리"
+      ]
+    },
+    {
+      "img": "penguin",
+      "name": "글로벌",
+      "cat": "해외 시장",
+      "status": "글로벌",
+      "bg": "#EEF4FB",
+      "blob": "#D3E3F5",
+      "ac": "#2f6db0",
+      "how": "K-뷰티를 세계로",
+      "tip": "홍콩 국제 박람회 등에서 제품을 선보였고, 2020년 글로벌 물류센터를 인수했어요.",
+      "tags": [
+        "#수출",
+        "#박람회",
+        "#물류센터"
+      ]
+    }
+  ],
+  "products": {
+    "tag": "제품",
+    "status": "제품",
+    "title": "GDK의 제품",
+    "sub": "인천 남동구 본사 · 기초부터 기능성까지 직접 개발·생산",
+    "characters": [
+      "guide"
+    ],
+    "groups": [
+      {
+        "label": "마스크",
+        "items": [
+          [
+            "마스크팩",
+            "시트 · 팩",
+            "#d94f76",
+            "대표"
+          ]
+        ]
+      },
+      {
+        "label": "스킨케어",
+        "items": [
+          [
+            "기초 화장품",
+            "매일 케어",
+            "#6a4fa8"
+          ],
+          [
+            "기능성 화장품",
+            "집중 케어",
+            "#8a5fc0"
+          ]
+        ]
+      },
+      {
+        "label": "선 · 바디 · 헤어",
+        "items": [
+          [
+            "선블록",
+            "자외선 차단",
+            "#b5760a"
+          ],
+          [
+            "바디 제품",
+            "보습 케어",
+            "#2a8a75"
+          ],
+          [
+            "헤어 제품",
+            "모발 케어",
+            "#2f6db0"
+          ]
+        ]
+      }
+    ]
+  },
+  "finale": {
+    "title": "피부에 닿는 정성",
+    "sub": "만족을 넘어 감동으로 — 품질과 안전을 약속하는 GDK화장품",
+    "logo": "GDK화장품",
+    "status": "함께"
+  },
+  "music": {
+    "prompt": "Fresh, soft and elegant beauty brand music: airy piano, light plucks, gentle beat and shimmering pads.",
+    "bpm": 104
+  },
+  "timing": {
+    "intro": 4,
+    "history": 6,
+    "scene": 5.5,
+    "products": 8.5,
+    "finale": 8
+  },
+  "sources": [
+    {
+      "title": "지디케이화장품(주) 기업정보 (사람인)",
+      "url": "https://www.saramin.co.kr/zf_user/company-info/view/csn/N0tEV2laUndFVlZOMmJOdGlrZE9Bdz09/company_nm/%EC%A7%80%EB%94%94%EC%BC%80%EC%9D%B4%ED%99%94%EC%9E%A5%ED%92%88(%EC%A3%BC)"
+    },
+    {
+      "title": "셀프코스 — 지디케이화장품 업체 정보",
+      "url": "https://selfcos.com/index/company_view/670"
+    },
+    {
+      "title": "GDK Cosmetics (CB Insights)",
+      "url": "https://www.cbinsights.com/company/gdk-cosmetics/"
+    },
+    {
+      "title": "GDK화장품, 홍콩 박람회 참가 (뉴스1, 2017)",
+      "url": "https://www.news1.kr/entertain/nstyle/3155757"
+    }
+  ]
+}
